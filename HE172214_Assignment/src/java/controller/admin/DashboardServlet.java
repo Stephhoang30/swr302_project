@@ -5,24 +5,18 @@
 
 package controller.admin;
 
-import dal.implement.CategoryDAO;
-import dal.implement.ProductDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
-import java.util.List;
-import model.Category;
-import model.Product;
 
 /**
  *
  * @author stephhoang
  */
-public class DashboardController extends HttpServlet {
+public class DashboardServlet extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -39,16 +33,15 @@ public class DashboardController extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet DashboardController</title>");  
+            out.println("<title>Servlet DashboardServlet</title>");  
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet DashboardController at " + request.getContextPath () + "</h1>");
+            out.println("<h1>Servlet DashboardServlet at " + request.getContextPath () + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
     } 
-    ProductDAO pDAO = new ProductDAO();
-    CategoryDAO cDAO = new CategoryDAO();
+
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /** 
      * Handles the HTTP <code>GET</code> method.
@@ -60,11 +53,6 @@ public class DashboardController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        List<Product> products = pDAO.findAll();
-        List<Category> categories = cDAO.findAll();
-        HttpSession session = request.getSession();
-        session.setAttribute("products", products);
-        session.setAttribute("categories", categories);
         request.getRequestDispatcher("../view/admin/dashboard.jsp").forward(request, response);
     } 
 

@@ -13,7 +13,7 @@
             <span>Management</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">          
-            <a class="dropdown-item" href="dashboard">Product List</a>
+            <a class="dropdown-item" href="product-list">Product List</a>
             <a class="dropdown-item" href="register.html">User List</a>
             <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
         </div>

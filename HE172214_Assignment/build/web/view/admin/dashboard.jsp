@@ -1,6 +1,6 @@
 <%-- 
     Document   : dashboard
-    Created on : Oct 18, 2024, 12:38:25 AM
+    Created on : Oct 27, 2024, 12:18:39 AM
     Author     : stephhoang
 --%>
 
@@ -55,59 +55,7 @@
                         <!-- Breadcrumbs-->
                     <jsp:include page="../common/admin/breadcrumbs.jsp"></jsp:include>
 
-                        <!-- Icon Cards-->
-                    <jsp:include page="../common/admin/icon-cards.jsp"></jsp:include>
-
-                        <!-- DataTables Example -->
-                        <div class="card mb-3">
-                            <div class="card-header">
-                                <i class="fas fa-table"></i>
-                                Product
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                        <thead>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Name</th>
-                                                <th>Image</th>
-                                                <th>Quantity</th>
-                                                <th>Price</th>
-                                                <th>Category</th>
-                                                <th>Description</th>
-                                                <th>Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        <c:forEach items="${products}" var="p">
-                                            <tr>
-                                                <td>${p.getId()}</td>
-                                                <td>${p.getName()}</td>
-                                                <td>
-                                                    <img src="${pageContext.request.contextPath}/img/product/${p.getImage()}" width="100" height="100" alt="alt"/>
-                                                </td>
-                                                <td>${p.getQuantity()}</td>
-                                                <td>${p.getPrice()}</td>
-                                                <td>
-                                                    <c:forEach items="${categories}" var="c">
-                                                        <c:if test="${c.getId() == p.getCategoryId()}">
-                                                            ${c.getName()}
-                                                        </c:if>
-                                                    </c:forEach>
-                                                </td>
-                                                <td>${p.getDescription()}</td>
-                                                <td>
-                                                    <button type="button" class="btn btn-primary">Edit</button>
-                                                    <button type="button" class="btn btn-danger">Delete</button>
-                                                </td>
-                                            </tr>
-                                        </c:forEach>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>                     
-                    </div>
+                    <h1>Welcome to Admin Dashboard!</h1>
 
                 </div>
                 <!-- /.container-fluid -->
@@ -129,11 +77,6 @@
             <!-- Logout Modal-->
             <jsp:include page="../common/admin/logout-modal.jsp"></jsp:include>
             
-            <jsp:include page="../admin/addProductModal.jsp"></jsp:include>
-            <jsp:include page="../admin/deleteProductModal.jsp"></jsp:include>
-            <jsp:include page="../admin/editProductModal.jsp"></jsp:include>
-
-
             <!-- Bootstrap core JavaScript-->
             <script src="${pageContext.request.contextPath}/vendor-admin/jquery/jquery.min.js"></script>
         <script src="${pageContext.request.contextPath}/vendor-admin/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -161,3 +104,4 @@
     </body>
 
 </html>
+
