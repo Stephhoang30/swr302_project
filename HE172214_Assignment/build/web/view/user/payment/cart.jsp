@@ -11,7 +11,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Team5_MobileStore</title>
+        <title>MobileStore</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -95,7 +95,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="product-thumbnail"><a href="#"><img src="img/cart/1.jpg" alt="man" /></a></td>
+                                            <td class="product-thumbnail"><a href="#"><img src="${pageContext.request.contextPath}/img/product/20.jpg" alt="man" /></a></td>
                                             <td class="product-name"><a href="#">Vestibulum suscipit</a></td>
                                             <td class="product-price"><span class="amount">£165.00</span></td>
                                             <td class="product-quantity"><input type="number" value="1"></td>
@@ -103,7 +103,7 @@
                                             <td class="product-remove"><a href="#"><i class="fa fa-times"></i></a></td>
                                         </tr>
                                         <tr>
-                                            <td class="product-thumbnail"><a href="#"><img src="img/cart/2.jpg" alt="man" /></a></td>
+                                            <td class="product-thumbnail"><a href="#"><img src="${pageContext.request.contextPath}/img/product/20.jpg" alt="man" /></a></td>
                                             <td class="product-name"><a href="#">Vestibulum dictum magna</a></td>
                                             <td class="product-price"><span class="amount">£50.00</span></td>
                                             <td class="product-quantity"><input type="number" value="1"></td>
@@ -120,8 +120,7 @@
                     <div class="col-lg-8 col-md-6 col-12">
                         <div class="buttons-cart mb-30">
                             <ul>
-                                <li><a href="#">Update Cart</a></li>
-                                <li><a href="#">Continue Shopping</a></li>
+                                <li><a href="../../homepage/home.jsp">Continue Shopping</a></li>
                             </ul>
                         </div>
                         <div class="coupon">
@@ -174,7 +173,7 @@
                                 </tbody>
                             </table>
                             <div class="wc-proceed-to-checkout">
-                                <a href="#">Proceed to Checkout</a>
+                                <a href="view/user/payment/check-out.jsp">Proceed to Checkout</a>
                             </div>
                         </div>
                     </div>

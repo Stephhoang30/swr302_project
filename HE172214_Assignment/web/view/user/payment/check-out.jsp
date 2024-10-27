@@ -130,7 +130,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <form action="#">
+                        <form action="check-out-confirm.jsp">
                             <div class="row">
                                 <div class="col-lg-6 col-md-12 col-12">
                                     <div class="checkbox-form">						
@@ -396,7 +396,7 @@
                                                 </div>
                                             </div>
                                             <div class="order-button-payment">
-                                                <input type="submit" value="Place order">
+                                                <a href="check-out-confirm.jsp">Place Order</a>
                                             </div>
                                         </div>
                                     </div>

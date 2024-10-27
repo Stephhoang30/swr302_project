@@ -56,6 +56,14 @@
         <servlet-name>DashboardServlet</servlet-name>
         <servlet-class>controller.admin.DashboardServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UserListServlet</servlet-name>
+        <servlet-class>controller.admin.UserListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>OrderListServlet</servlet-name>
+        <servlet-class>controller.admin.OrderListServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
         <url-pattern>/home</url-pattern>
@@ -87,6 +95,14 @@
     <servlet-mapping>
         <servlet-name>DashboardServlet</servlet-name>
         <url-pattern>/admin/dashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserListServlet</servlet-name>
+        <url-pattern>/admin/user-list</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OrderListServlet</servlet-name>
+        <url-pattern>/admin/order-list</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>

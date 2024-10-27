@@ -67,7 +67,7 @@
             <!-- breadcrumbs-area-start -->
         <jsp:include page="../common/homepage/breadcrumbs-area.jsp"></jsp:include>
             <!-- breadcrumbs-area-end -->
-            
+
             <!-- user-login-area-start -->
             <div class="user-login-area mb-70">
                 <div class="container">
@@ -81,27 +81,39 @@
                             <div class="login-form">
                                 <form action="authen?action=login" method="POST">
                                     <div class="single-login">
-                                        <label>Username or email<span>*</span></label>
+                                        <label>Username<span>*</span></label>
                                         <input type="text" name="username"/>
                                     </div>
                                     <div class="single-login">
                                         <label>Password<span>*</span></label>
                                         <input type="password" name="password"/>
                                     </div>
-                                    <div class="single-login single-login-2">
+
+                                    <div class="single-register text-center">
                                         <a href="#" onclick="this.closest('form').submit()">Login</a>
                                     </div>
                                     <div>
                                         <p style="color: red">${error}</p>
-                                    </div>
-                                </form>
-                            </div>
+                                </div>
+                                ----------------------------------------------------------------------------------------------------------
+
+                                <div class="single-register text-center">
+                                    <a href="#" ">G+   Login With Google</a><br><!-- comment -->
+                                </div>
+                                <div class=" text-center">
+                                    Forgot your password?  <a href="#">click here</a><br><!-- comment -->
+                                    Dont't have an account?  <a href="../authen/signup.jsp">Register</a>
+                                </div>
+
+
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- user-login-area-end -->
-            <!-- footer-area-start -->
+        </div>
+        <!-- user-login-area-end -->
+        <!-- footer-area-start -->
         <jsp:include page="../common/homepage/footer-area.jsp"></jsp:include>
             <!-- footer-area-end -->
 

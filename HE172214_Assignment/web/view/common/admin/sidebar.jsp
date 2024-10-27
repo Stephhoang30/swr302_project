@@ -14,8 +14,8 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">          
             <a class="dropdown-item" href="product-list">Product List</a>
-            <a class="dropdown-item" href="register.html">User List</a>
-            <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+            <a class="dropdown-item" href="user-list">User List</a>
+            <a class="dropdown-item" href="order-list">Order List</a>
         </div>
     </li>
     <li class="nav-item">

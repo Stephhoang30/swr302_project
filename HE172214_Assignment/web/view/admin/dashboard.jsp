@@ -29,7 +29,7 @@
         <link href="${pageContext.request.contextPath}/css/sb-admin.css" rel="stylesheet">
 
         <link rel="stylesheet" href="${pageContext.request.contextPath}/css/colReorder-bootstrap4.css">
-        
+
         <style>
             .error{
                 color:red;
@@ -53,14 +53,18 @@
                     <div class="container-fluid">
 
                         <!-- Breadcrumbs-->
-                    <jsp:include page="../common/admin/breadcrumbs.jsp"></jsp:include>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="dashboard">Dashboard</a>
+                            </li>                           
+                        </ol>
 
-                    <h1>Welcome to Admin Dashboard!</h1>
+                        <h1>Welcome to Admin Dashboard!</h1>
 
-                </div>
-                <!-- /.container-fluid -->
+                    </div>
+                    <!-- /.container-fluid -->
 
-                <!-- Sticky Footer -->
+                    <!-- Sticky Footer -->
                 <jsp:include page="../common/admin/footer.jsp"></jsp:include>
 
                 </div>
@@ -75,8 +79,8 @@
             </a>
 
             <!-- Logout Modal-->
-            <jsp:include page="../common/admin/logout-modal.jsp"></jsp:include>
-            
+        <jsp:include page="../common/admin/logout-modal.jsp"></jsp:include>
+
             <!-- Bootstrap core JavaScript-->
             <script src="${pageContext.request.contextPath}/vendor-admin/jquery/jquery.min.js"></script>
         <script src="${pageContext.request.contextPath}/vendor-admin/bootstrap/js/bootstrap.bundle.min.js"></script>
